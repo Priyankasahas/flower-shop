@@ -36,15 +36,15 @@ Once a valid input is detected, it initiates the application and processes the i
 
 Here I have tried to focus on classes to have a single responsibility.
 
-CliService - This is an example of wrapper class for an external cli service.
+* CliService - This is an example of wrapper class for an external cli service.
 
-OrderingTool - Initiates the ordering process.
+* OrderingTool - Initiates the ordering process.
 
-Shop - responsible for checking the validity of the input and processing valid input to provide the required output.
+* Shop - responsible for checking the validity of the input and processing valid input to provide the required output.
 
-OrderProcessor - Splits the quantity into bundles and returns the bundled result and/or error message if the quantity can't be bundled.
+* OrderProcessor - Splits the quantity into bundles and returns the bundled result and/or error message if the quantity can't be bundled.
 
-OrderReceipt - Generates and structures the receipt for output.
+* OrderReceipt - Generates and structures the receipt for output.
 
 ## Database
 Run rake db:setup
@@ -56,3 +56,26 @@ Run rake db:setup
 Use `rspec` to run the tests
 
 Use `rubocop` to check if the code aligns with Ruby best practices
+
+## Output
+Processing bundles for 10 Roses - R12...
+Processing bundles for 15 Lilies - L09...
+Processing bundles for 13 Tulips - T58...
+10 R12 X $12.99
+Total: $129.9
+---------------------
+
+9 L09 X $24.95
+6 L09 X $16.95
+Total: $326.25
+---------------------
+
+5 T58 X $9.95
+5 T58 X $9.95
+3 T58 X $5.95
+Total: $117.35
+---------------------
+
+Total Order Price: $573.5
+
+Thank You!
