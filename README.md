@@ -58,24 +58,35 @@ Use `rspec` to run the tests
 Use `rubocop` to check if the code aligns with Ruby best practices
 
 ## Output
+
 Processing bundles for 10 Roses - R12...
+
 Processing bundles for 15 Lilies - L09...
+
 Processing bundles for 13 Tulips - T58...
+
 10 R12 X $12.99
+
 Total: $129.9
----------------------
+
 
 9 L09 X $24.95
+
 6 L09 X $16.95
+
 Total: $326.25
----------------------
 
 5 T58 X $9.95
+
 5 T58 X $9.95
+
 3 T58 X $5.95
+
 Total: $117.35
----------------------
+
 
 Total Order Price: $573.5
+----------------------------
+
 
 Thank You!
