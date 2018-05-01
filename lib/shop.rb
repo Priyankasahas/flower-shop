@@ -100,9 +100,10 @@ class Shop
   end
 
   def self.final_output(total_order_price)
-    message = "Total Order Price: $#{total_order_price}" if
-    total_order_price > 0
-    send_output(message, 'cyan')
+    if total_order_price > 0
+      message = "Total Order Price: $#{total_order_price}"
+      send_output(message, 'cyan')
+    end
 
     send_output("\nThank You!", 'blue')
   end
