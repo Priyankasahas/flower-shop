@@ -55,7 +55,7 @@ Run rake db:setup
 
 Use `rspec` to run the tests
 
-Use `rubocop` to check if the code aligns with Ruby best practices
+Use `rubocop lib` to check if the code aligns with Ruby best practices
 
 ## Output
 
